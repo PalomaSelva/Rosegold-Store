@@ -1,0 +1,179 @@
+@media (min-width:700px){
+      nav ul li:hover ul{
+            display: block;
+            position: absolute;
+            margin-top: 44%;
+            margin-left: -8px;
+            background: #c8b4af;
+            border-radius: 6px;
+            width: 100%;
+            padding: 10px 5px;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+            color: white;
+      }      
+      nav ul li a:hover
+{ 
+      color: #997D85;
+      border-bottom: 2px solid #997D85;
+      border-radius: 0px;
+}
+      nav ul li ul li:hover a{
+      color: #997D85;
+      border-bottom: 1px solid #997D85;
+      border-radius: 0px;
+
+      }
+      #guia .container table tr:hover:not(:first-child){
+            font-weight: 600;
+            color:#000000;
+      }
+}
+
+
+@media (max-width:700px){
+
+      header .header-two .container{
+            flex-direction: column;
+            height: 25vh;
+      }
+      header .header-two .container img{
+            height: 90%;
+            margin-top: -14px;
+      }
+
+      .menu-button-container{
+            display: flex;
+      }
+      .menu{
+            position: absolute;
+            margin-top: 10px;
+            flex-direction: column;
+            width: 110vw;
+            justify-content: center;
+            align-items: center;
+            left: 100%;
+            transform: translateX(110vw);
+            transition: .5s transform;
+      }
+      .menu>li{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            color:white;
+            background-color: #D4C1BC;
+            border-radius: 5px;
+      }
+      .menu>li:not(:last-child){
+            border-bottom: 2px solid #c6b5b0;
+      }
+      .menu li a{
+            flex:1;
+            text-align: center;
+      }
+
+      .menu-button-container{
+            cursor: pointer;
+            position: relative;
+            display: block;
+            height: 22px;
+            width: 38px;
+      }
+      .menu-button-container span{
+            position: absolute;
+            margin-top: -9px;
+            display:block;
+            height: 5px;
+            width: 100%;
+            background-color:#997D85;
+            border-radius: 10px;
+            transition: .25s ease-in-out;
+      }
+
+      label span:nth-child(1){
+            top:0;
+      }
+      label span:nth-child(2){
+            top:10px;
+      }
+      label span:nth-child(3){
+            top:20px;
+      }
+
+      #checkbox-menu:checked + label span:nth-child(1){
+            transform: rotate(45deg);
+            top:10px;
+      } 
+
+      #checkbox-menu:checked + label span:nth-child(2){
+            opacity: 0;
+      }
+      #checkbox-menu:checked + label span:nth-child(3){
+            transform: rotate(-45deg);
+            top:10px;
+      }
+
+      nav.menu{
+        width: 100%;
+        
+      }
+      
+      #checkbox-menu:checked~nav .menu {
+        transform: translateX(-108vw);
+        transition: 0.5s transform;
+      } 
+
+      .mobile_dropdown a{
+            padding: 0;
+      }
+      .first{    
+            /* height: 20px; */
+            padding: 20px 10px;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+      }
+      nav ul .mobile_dropdown a .first span.rotate{
+            transform: rotate(-180deg);
+      }
+      .mobile_dropdown{
+            display: flex;
+            flex-direction: column;
+      }
+      #btn-2{
+      position: relative;
+      margin-top: 5%;
+      font-size: 70px;
+      padding: 50px;
+      }
+      [id^=btn]:checked + ul{
+            display: block;
+            margin-left:0 ;
+      }
+
+      nav ul li ul{
+            background-color: #c6b1ac;
+            position: relative;
+      }
+
+      nav ul li ul li a{
+            margin-left: -40px;
+      }
+
+
+      /* #guia */
+
+      .all-cards{
+            flex-direction: column;
+            z-index: -1;
+            height: 100%;
+}
+      .card{
+            margin: 25px auto;
+      }
+
+}

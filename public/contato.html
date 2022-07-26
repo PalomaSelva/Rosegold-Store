@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>RoseGold</title>
+            <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+            <link rel="stylesheet" href="./assets/css/reset.css">
+            <link rel="stylesheet" href="./assets/css/style.css"> 
+            <link rel="stylesheet" href="./assets/css/responsive.css">
+      </head>
+      <body>
+            <header>
+                  <div class="header-first">
+                        <div class="container">
+                              <p>Envio para todo Brasil</p>
+                              <a href="#carrinho">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                              </a>
+                        </div>
+                  </div>
+
+                  <div class="header-two">
+                        <div class="container">
+                              <img src="assets/imgs/rosegold.png" alt="logo">   
+                              <div class="menu-section">
+                                    <!--Criando o menu hamburguer-->
+                                    <div class="container-menu">
+                                          <input type="checkbox" id="checkbox-menu">
+                                          <label class="menu-button-container" for="checkbox-menu">
+                                          <span></span>
+                                          <span></span>
+                                          <span></span>
+                                          </label>
+                                    <!--------------------------->
+                                    <nav>
+                                          <ul class="menu">
+                                                <li><a href="index.html">Home</a></li>
+                                                <li class="mobile_dropdown">
+                                                      <a href="#">
+                                                      <label for="btn-2" class="first">
+                                                                  Produtos
+                                                                  <span class="fas fa-caret-down"></span>
+                                                      </label>
+                                                      </a>
+                                                      <input type="checkbox" id="btn-2">
+                                                      <ul>
+                                                      <li><a href="com">Conjuntos com bojo</a></li>
+                                                      <li><a href="#">Conjuntos sem bojo</a></li>
+                                                      <li><a href="#">Noite</a></li>
+                                                      </ul>
+                                                </li>
+                                                <li><a href="contato.html">Contato</a></li>
+                                                <li><a href="guia-medidas.html">Guia de medidas</a></li>
+                                                <li><a href="#">Sobre nós</a></li>
+                                          </ul>
+                                    </nav>
+                                    </div>
+                              </div>     
+                        </div>
+
+                  </div>
+            </header>
+            <main id="contact">
+                  <div class="contato container">
+                        <div class="all-texts">
+                              <h1>Contato</h1>
+                              <h2>Não encontrou o que desejava na <span>ROSEGOLD</span>?</h2>
+                              <h2>Não se preocupe! Entre em contato conosco e nossa equipe retornará o mais rápido possível.</h2>
+                              <div class="social-media-content">
+                                    <div class="social-media">
+                                          <a href="tel:+55">
+                                                <i class="fa-brands fa-whatsapp"></i>
+                                                <p> +55 (81)XXXXX-XXXX</p>
+                                          </a>
+                                    </div>
+                                    <div class="barra"></div>
+                                    <div class="social-media">
+                                          <a href="mailto:">
+                                                <i class="fa-regular fa-envelope"></i>
+                                                <p>XXXXXXX@gmail.com</p>
+                                          </a>
+                                    </div>
+                                    <div class="barra"> </div>
+                                    <div class="social-media">
+                                          <a href="https://www.instagram.com/loja.rosegold/">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <p>@loja.rosegold</p>
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="forms">
+                              <form>
+                              <div class="form-elements">
+                                    <label for="name">Nome completo</label><br>
+                                    <input type="text" id="name" placeholder="Digite o seu nome"><br>
+                              </div>
+                              <div class="form-elements">
+                                    <label for="email">Email</label><br>
+                                    <input type="email" id="email" placeholder="Digite um email válido"><br>
+                              </div>
+                              <div class="form-elements">
+                                    <label for="phone">Telefone</label><br>
+                                    <input type="tel" id="phone" placeholder="Telefone"><br>
+                              </div>
+                              <div class="form-elements">
+                                    <label for="name">Mensagem</label><br>
+                                    <textarea placeholder="Mensagem..."></textarea>
+                                    <br>
+                                    <button type="button" onclick="alert('Mensagem enviada com sucesso!')">Enviar</button>
+                              </div>
+                              </form>
+                        </div>
+                  </div>
+            </main>
