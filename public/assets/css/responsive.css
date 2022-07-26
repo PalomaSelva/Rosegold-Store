@@ -27,6 +27,7 @@
             font-weight: 600;
             color:#000000;
       }
+
 }
 
 
@@ -171,9 +172,22 @@
             flex-direction: column;
             z-index: -1;
             height: 100%;
-}
+      }
       .card{
             margin: 25px auto;
       }
+      
+      /* PRODUTOS */
+
+      #products{
+            width: 100%;
+      }
+      #products .category-controls{
+          flex-direction: column; 
+          text-align: center;
+      }
+       #products .category-controls select{
+            margin-top: 18px;
+       }
 
 }
