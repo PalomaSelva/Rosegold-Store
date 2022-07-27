@@ -12,12 +12,12 @@ const produtos =[
             price: "50R$",
 
       },
-      // {
-      //       id:2,
-      //       title:"Produto 2",
-      //       price: "50R$",
+      {
+            id:2,
+            title:"Produto 2",
+            price: "50R$",
 
-      // }
+      }
 
 ];
 
