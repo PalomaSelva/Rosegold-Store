@@ -84,25 +84,30 @@
                               <h2>Filtrar por</h2>
                               <h3>Tamanho</h3>
                         </div>
+                              
                         <div class="all-card-products">
-                              <div class="card product">
-                                    <div class="image">
-                                          <img src="./assets/imgs/img2.jpg" alt="Conjunto com bojo">
-                                    </div>
-                                    <div class="content">
-                                          <p class="title text--medium">
-                                                Conjuntos com bojo
-                                          </p>
-                                          <p>
-                                                
-                                          </p>
-                                          <p>
+                              <% for (let i=0;i<products.length;i++) { %>
+                                    <div class="card product">
+                                          <div class="image">
+                                                <img src="./assets/imgs/img2.jpg" alt="Conjunto com bojo">
+                                          </div>
+                                          <div class="content">
+                                                <p class="title text--medium">
+                                                      <%=products[i].title%> 
+                                                </p>
+                                                <p>
+                                                      <%=products[i].price%>
+                                                </p>
+                                                <p>
 
-                                          </p>
+                                                </p>
+                                          </div>
                                     </div>
-                              </div>
+                              <% } %> 
+
                         </div>
                   </div>
+                  
             </main>
 </body>
 </html>

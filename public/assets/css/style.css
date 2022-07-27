@@ -351,7 +351,7 @@ main .container h2{
 /* -------------PRODUTOS--------------- */
 #products {
       width: 90%;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
 }
 #products .category-controls {
@@ -365,13 +365,13 @@ main .container h2{
 }
 #products .category-controls select {
       appearance: none;
-      max-width: 250px;
+      min-width: 250px;
       padding: 13px 10px;
       margin: 0px 10px;
       border-radius: 10px;
-      font-weight: 600;
+      font-weight: 500;
       border:1.5px solid #B78C82;
-      color: #997D85;
+      color: #a8837a;
       background: url('../imgs/arrow-icon-hover.svg');
       background-repeat: no-repeat;
       background-position: right;
@@ -386,7 +386,7 @@ main .container h2{
 #products .category-body{
       display: flex;
       flex-direction: row;
-      justify-content: first baseline;
+      justify-content: baseline;
       padding: 0px 10px;
       height: 100%;
 }
@@ -395,14 +395,20 @@ main .container h2{
       color: #434343;
       width: 23%;
       letter-spacing: 0.08rem;
+      
 }
 #products .category-body .filtro-text h2{
       margin-bottom: 15px;
 }
-#products .category-body .all-cards-products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+#products .category-body .all-card-products {
+      width: 90%;
+      max-width: 980px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-gap: 30px 10px;
+      
+      margin-top: 10px;
 }
 
 #products .card {

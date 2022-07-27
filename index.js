@@ -1,5 +1,5 @@
 import express, { request, response } from "express";
-
+import * as productsService from "./products-service.js";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -13,6 +13,7 @@ app.listen(PORT, ()=>{
 });
 
 app.get('/com',(request,response)=> {
-      response.render('pages/com-bojo')
+      const products = productsService.getProdutos()
+      response.render('pages/com-bojo', {products})
 })
 
