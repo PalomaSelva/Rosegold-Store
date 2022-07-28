@@ -83,24 +83,30 @@
                         <div class="filtro-text">
                               <h2>Filtrar por</h2>
                               <h3>Tamanho</h3>
+                              <div class="check">
+                                    <input type="checkbox" name="tamanhoP" id="tamanhoP">
+                                    <label for="tamanhoP">P</label>
+                                    <input type="checkbox" name="tamanhoM" id="tamanhoM">
+                                    <label for="tamanhoP">M</label>
+                                    <input type="checkbox" name="tamanhoG" id="tamanhoG">
+                                    <label for="tamanhoP">G</label>
+                              </div>
                         </div>
                               
                         <div class="all-card-products">
                               <% for (let i=0;i<products.length;i++) { %>
                                     <div class="card product">
                                           <div class="image">
-                                                <img src="./assets/imgs/img2.jpg" alt="Conjunto com bojo">
+                                                <img src="<%= products[i].image1 %> " alt="Conjunto com bojo"  onmouseover="this.src='<%= products[i].image2 %>';" onmouseout="this.src='<%= products[i].image1 %>';">
                                           </div>
                                           <div class="content">
-                                                <p class="title text--medium">
+                                                <p class="title">
                                                       <%=products[i].title%> 
                                                 </p>
-                                                <p>
+                                                <p class="price">
                                                       <%=products[i].price%>
                                                 </p>
-                                                <p>
-
-                                                </p>
+                                                <button name="button" class="btn"> Adicionar ao carrinho</button>
                                           </div>
                                     </div>
                               <% } %> 
