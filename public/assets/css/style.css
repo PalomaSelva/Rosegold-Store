@@ -400,6 +400,80 @@ main .container h2{
 #products .category-body .filtro-text h2{
       margin-bottom: 15px;
 }
+
+#products .category-body .check{
+      margin: 10px 0;
+}
+
+#products .category-body .check .container{
+
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+#products .category-body .check input{
+  position: absolute;
+  opacity: 1;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 10;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #937e85;
+  border-radius: 3px;
+}
+/* On mouse-over, add a grey background color */
+#products .category-body .check .container:hover input ~ .checkmark {
+  background-color: rgb(235, 232, 232);
+}
+
+/* When the checkbox is checked, add a blue background */
+#products .category-body .check .container input:checked ~ .checkmark {
+  background-color: #937e85;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+#products .category-body .check .container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#products .category-body .check .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#products .category-body .check .container .checkmark:after {
+  left: 3.6px;
+  top: 3px;
+  width: 5px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
 #products .category-body .all-card-products {
       width: 90%;
       max-width: 980px;
