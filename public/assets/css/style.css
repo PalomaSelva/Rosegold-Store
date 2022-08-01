@@ -489,7 +489,7 @@ main .container h2{
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
 }
-.card:hover{
+#products .card:hover{
     transform: translateY(0px);
 }
 #products .card .image{
