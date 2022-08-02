@@ -592,12 +592,67 @@ main .container h2{
 #item{
       width: 90%;
       max-width: 1100px;
-      margin: auto;
+      margin: 30px auto;
 }
 #item .item{
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      align-items: flex-start;
+      justify-content: center;
       height: 80vh;
-      background-color: #bba49b;
+}
+
+#item .card-item{
+      max-width: 140px;
+      background-color:  #9f7565;
+      border-radius: 15px;
+      margin: 10px 5px;
+}
+#item .card-item .photo{
+    width: 100%;
+    position: relative;
+    min-height: 20px;
+    height: 140px;
+    overflow: hidden;
+    background-color: #937e85;
+    border-radius: 15px;
+    
+}
+#item .card-item::after{
+      content: '';
+      width: 100%;
+      border-radius: 20px;
+      height: 0px;
+      display: block;
+      transition: all .3s;
+}
+#item .card-item:hover::after{
+      content: '';
+      height: 6px;
+
+}
+#item .card-item:hover{
+      transition: all .6s;
+      box-shadow: 5px 5px 10px -4px #00000080;
+}
+#item .card-item .photo img{
+      width:100%;
+}
+
+#item .principal-photo-card{
+      margin: 10px 3px;
+      max-width: 550px;
+      position: relative;
+      min-height: 40px;
+      max-height: 550px;
+      overflow: hidden;
+      background-color: #937e85;
+      border-radius: 18px;
+      box-shadow: 5px 5px 10px -4px #00000070;
+}
+#item .principal-photo-card img{
+width:100%;
+}
+
+#item .details{
+      margin: 15px 40px;
 }
