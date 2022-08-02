@@ -87,6 +87,11 @@
                         <div class="principal-photo-card">
                               <img src="../<%=produto.image1%>" alt="Imagem principal" id="principal-photo">
                         </div>
+                        <div id="myModal" class="modal">
+                              <span class="close">&times;</span>
+                              <img class="modal-content" id="img01">
+                              <div id="caption"></div>
+                        </div>
                         <div class="details">
                               <h1><%= produto.title %> </h1>
                               <h2><%= produto.price %> </h2>
@@ -116,7 +121,7 @@
                               document.getElementById('principal-photo').src=image1;
                               cardItem1.style.transition='all 0.4s'
                               cardItem1.style.height='147px'
-                              cardItem1.style.boxShadow='5px 5px 10px -6px grey'
+                              cardItem1.style.boxShadow='5px 5px 10px -7px grey'
                               cardItem2.style.height='140px'
                               cardItem2.style.boxShadow='none'
                         }
@@ -124,10 +129,32 @@
                               document.getElementById('principal-photo').src=image2
                               cardItem2.style.transition='all 0.4s'
                               cardItem2.style.height='147px'
-                              cardItem2.style.boxShadow='5px 5px 10px -6px grey'
+                              cardItem2.style.boxShadow='5px 5px 10px -7px grey'
                               cardItem1.style.height='140px'
                               cardItem1.style.boxShadow='none'
                         }                        
             </script>
+            <script>
+                  // Get the modal
+                  var modal = document.getElementById("myModal");
+
+                  // Get the image and insert it inside the modal - use its "alt" text as a caption
+                  var img = document.getElementById("principal-photo");
+                  var modalImg = document.getElementById("img01");
+                  var captionText = document.getElementById("caption");
+                  img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                  }
+
+                  // Get the <span> element that closes the modal
+                  var span = document.getElementsByClassName("close")[0];
+
+                  // When the user clicks on <span> (x), close the modal
+                  span.onclick = function() { 
+                  modal.style.display = "none";
+                  }
+</script>
 </body>
 </html>
