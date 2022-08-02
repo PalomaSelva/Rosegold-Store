@@ -16,17 +16,39 @@ app.listen(PORT, ()=>{
 
 app.get('/com',(request,response)=> {
       const products = ComBojoService.getProdutos()
-      response.render('pages/com-bojo', {products,title:"Conjunto com bojo"})
+      response.render('pages/produtos', {products,title:"Conjunto com bojo"})
 })
+
+app.get('/com/:productId', (request,response)=> {
+      const productId = request.params.productId;
+      const produto = ComBojoService.getProdutosByID(productId);
+      response.render('pages/item', {produto})
+})
+
+
+
+
 
 app.get('/sem',(request,response)=> {
       const products = SemBojoService.getProdutos()
-      response.render('pages/com-bojo', {products,title:"Conjunto sem bojo"})
+      response.render('pages/produtos', {products,title:"Conjunto sem bojo"})
+})
+
+app.get('/sem/:productId', (request,response)=> {
+      const productId = request.params.productId;
+      const produto = SemBojoService.getProdutosByID(productId);
+      response.render('pages/item', {produto})
 })
 
 app.get('/noite',(request,response)=> {
       const products = NoiteService.getProdutos()
-      response.render('pages/com-bojo', {products,title:"Noite"})
+      response.render('pages/produtos', {products,title:"Noite"})
+})
+
+app.get('/noite/:productId', (request,response)=> {
+      const productId = request.params.productId;
+      const produto = NoiteService.getProdutosByID(productId);
+      response.render('pages/item', {produto})
 })
 
 // Criar um service para cada tipo de produto => com,sem e noite

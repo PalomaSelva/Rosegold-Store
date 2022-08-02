@@ -34,9 +34,9 @@ function getProdutos(){
       return produtos;
 }
 
-function getProdutosByID(articleId){
-      return produtos.find(article=>{
-            return (article.id === Number(articleId))
+function getProdutosByID(productId){
+      return produtos.find(product=>{
+            return (product.id === Number(productId))
       })
 }
 
