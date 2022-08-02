@@ -72,20 +72,20 @@
             <main id="item">
                   <div class="item">
                         <div class="photos-card">
-                              <div class="card-item">
+                              <div class="card-item" id="card-item1" onclick="changePhoto1()">
                                     <div class="photo">
                                           <img src="../<%=produto.image1%>" alt="Produto - 1ª imagem">
                                     </div>
                               </div>
 
-                              <div class="card-item">
+                              <div class="card-item" id="card-item2" onclick="changePhoto2()">
                                     <div class="photo">
                                           <img src="../<%=produto.image2%>" alt="Produto - 2ª imagem">
                                     </div>
                               </div>
                         </div>
                         <div class="principal-photo-card">
-                              <img src="../<%=produto.image1%>" alt="Imagem principal">
+                              <img src="../<%=produto.image1%>" alt="Imagem principal" id="principal-photo">
                         </div>
                         <div class="details">
                               <h1><%= produto.title %> </h1>
@@ -106,5 +106,28 @@
                         </div>
                   </div>
             </main>
+
+            <script>
+                  const image1 = '../<%=produto.image1%>'
+                  const image2 = '../<%=produto.image2%>'
+                  const cardItem1 = window.document.getElementById('card-item1') 
+                  const cardItem2 = window.document.getElementById('card-item2')    
+                        function changePhoto1(){
+                              document.getElementById('principal-photo').src=image1;
+                              cardItem1.style.transition='all 0.4s'
+                              cardItem1.style.height='147px'
+                              cardItem1.style.boxShadow='5px 5px 10px -6px grey'
+                              cardItem2.style.height='140px'
+                              cardItem2.style.boxShadow='none'
+                        }
+                        function changePhoto2(){
+                              document.getElementById('principal-photo').src=image2
+                              cardItem2.style.transition='all 0.4s'
+                              cardItem2.style.height='147px'
+                              cardItem2.style.boxShadow='5px 5px 10px -6px grey'
+                              cardItem1.style.height='140px'
+                              cardItem1.style.boxShadow='none'
+                        }                        
+            </script>
 </body>
 </html>

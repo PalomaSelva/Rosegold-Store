@@ -102,7 +102,7 @@
                         <div class="all-card-products">
                               <% for (let i=0;i<products.length;i++) { %>
                                           <div class="card product">
-                                                <a href="com/<%=products[i].id%> ">
+                                                <a href="<%=type%>/<%=products[i].id%> ">
                                                 <div class="image">
                                                       <img src="<%= products[i].image1 %> " alt="Conjunto com bojo"  onmouseover="this.src='<%= products[i].image2 %>';" onmouseout="this.src='<%= products[i].image1 %>';">
                                                 </div>

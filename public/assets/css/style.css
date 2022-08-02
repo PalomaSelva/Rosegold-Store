@@ -606,6 +606,12 @@ main .container h2{
       background-color:  #9f7565;
       border-radius: 15px;
       margin: 10px 5px;
+      margin-bottom: 15px;
+      transition: all .3s;
+}
+#item #card-item1{
+      height: 146px;
+      box-shadow: 5px 5px 10px -6px grey;
 }
 #item .card-item .photo{
     width: 100%;
@@ -617,22 +623,9 @@ main .container h2{
     border-radius: 15px;
     
 }
-#item .card-item::after{
-      content: '';
-      width: 100%;
-      border-radius: 20px;
-      height: 0px;
-      display: block;
-      transition: all .3s;
-}
-#item .card-item:hover::after{
-      content: '';
-      height: 6px;
 
-}
 #item .card-item:hover{
       transition: all .6s;
-      box-shadow: 5px 5px 10px -4px #00000080;
 }
 #item .card-item .photo img{
       width:100%;

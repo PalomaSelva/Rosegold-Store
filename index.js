@@ -16,7 +16,7 @@ app.listen(PORT, ()=>{
 
 app.get('/com',(request,response)=> {
       const products = ComBojoService.getProdutos()
-      response.render('pages/produtos', {products,title:"Conjunto com bojo"})
+      response.render('pages/produtos', {products,title:"Conjunto com bojo",type:'com'})
 })
 
 app.get('/com/:productId', (request,response)=> {
@@ -25,11 +25,9 @@ app.get('/com/:productId', (request,response)=> {
       response.render('pages/item', {produto})
 })
 
-
-
 app.get('/sem',(request,response)=> {
       const products = SemBojoService.getProdutos()
-      response.render('pages/produtos', {products,title:"Conjunto sem bojo"})
+      response.render('pages/produtos', {products,title:"Conjunto sem bojo",type:'sem'})
 })
 
 app.get('/sem/:productId', (request,response)=> {
@@ -40,7 +38,7 @@ app.get('/sem/:productId', (request,response)=> {
 
 app.get('/noite',(request,response)=> {
       const products = NoiteService.getProdutos()
-      response.render('pages/produtos', {products,title:"Noite"})
+      response.render('pages/produtos', {products,title:"Noite",type:'noite'})
 })
 
 app.get('/noite/:productId', (request,response)=> {
