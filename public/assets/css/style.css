@@ -584,3 +584,19 @@ main .container h2{
 #products .content .btn:hover {
       color: #111;
 }
+
+
+/* ---------------- ITENS ---------------- */
+
+#item{
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+}
+#item .item{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80vh;
+      background-color: #9f7565;
+}
