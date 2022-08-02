@@ -27,8 +27,6 @@ app.get('/com/:productId', (request,response)=> {
 
 
 
-
-
 app.get('/sem',(request,response)=> {
       const products = SemBojoService.getProdutos()
       response.render('pages/produtos', {products,title:"Conjunto sem bojo"})

@@ -42,7 +42,7 @@
                               <!--------------------------->
                                     <nav>
                                           <ul class="menu">
-                                                <li><a href="index.html">Home</a></li>
+                                                <li><a href="../index.html">Home</a></li>
                                                 <li class="mobile_dropdown">
                                                       <a href="#">
                                                       <label for="btn-2" class="first">
@@ -57,8 +57,8 @@
                                                       <li><a href="../noite">Noite</a></li>
                                                       </ul>
                                                 </li>
-                                                <li><a href="contato.html">Contato</a></li>
-                                                <li><a href="guia-medidas.html">Guia de medidas</a></li>
+                                                <li><a href="../contato.html">Contato</a></li>
+                                                <li><a href="../guia-medidas.html">Guia de medidas</a></li>
                                                 <li><a href="#">Sobre nós</a></li>
                                           </ul>
                                     </nav>
@@ -74,7 +74,7 @@
                         <div class="photos-card">
                               <div class="card-item">
                                     <div class="photo">
-                                          <img src="" alt="Produto - 1ª imagem">
+                                          <img src="../<%=produto.image1%>" alt="Produto - 1ª imagem">
                                     </div>
                               </div>
 
@@ -89,8 +89,20 @@
                         </div>
                         <div class="details">
                               <h1>Nome do item</h1>
-                              <h2>Preço</h2>
-
+                              <h2><%= produto.price %> </h2>
+                              <div class="category-controls">
+                                    <p>
+                                    Tamanho
+                                    </p>
+                                    <form>
+                                    <select name="order" id="order appearance-select" aria-label="Ordenar por:">
+                                                <option value="P">P</option>
+                                                <option value="M">M</option>
+                                                <option value="G">G</option>
+                                                <option value="GG">GG</option>
+                                          </select> 
+                                    </form>
+                              </div>
                         </div>
                   </div>
             </main>
