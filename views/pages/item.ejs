@@ -95,7 +95,7 @@
                               <div class="mySlides">
                                     <img class="modal-content" id="img02">
                               </div>
-                              <a class="prev" onclick="plusSlides(-1)">❮  </a>
+                              <a class="prev" onclick="plusSlides(-1)">❮</a>
                               <a class="next" onclick="plusSlides(1)">❯</a>
                         </div>
                         <div class="details">
@@ -125,7 +125,7 @@
                   const cardItem2 = window.document.getElementById('card-item2')    
                         function changePhoto1(){
                               document.getElementById('principal-photo').src=image1;
-                              cardItem1.style.transition='all 0.4s'
+                              cardItem1.style.transition='all 0.2s'
                               cardItem1.style.height='147px'
                               cardItem1.style.boxShadow='5px 5px 10px -7px grey'
                               cardItem2.style.height='140px'
@@ -133,7 +133,7 @@
                         }
                         function changePhoto2(){
                               document.getElementById('principal-photo').src=image2
-                              cardItem2.style.transition='all 0.4s'
+                              cardItem2.style.transition='all 0.2s'
                               cardItem2.style.height='147px'
                               cardItem2.style.boxShadow='5px 5px 10px -7px grey'
                               cardItem1.style.height='140px'
@@ -156,6 +156,12 @@
                         modalImg.src = img.src;
                         modalImg2.src = img2.src;
                   }
+                  modal.onclick = function(e){
+                        if (e.target == this)  {
+                              modal.style.display = 'none';
+                        }
+                  };
+                 
 
                   // Get the <span> element that closes the modal
                   var span = document.getElementsByClassName("close")[0];
@@ -164,7 +170,6 @@
                   span.onclick = function() { 
                         modal.style.display = "none";
                   }
-
             // -------------- SLIDE --------------
 
                   let slideIndex = 1;

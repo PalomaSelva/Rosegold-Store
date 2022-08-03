@@ -625,7 +625,7 @@ main .container h2{
 }
 
 #item .card-item:hover{
-      transition: all .6s;
+      transition: all .2s;
 }
 #item .card-item .photo img{
       width:100%;
