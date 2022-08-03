@@ -820,3 +820,19 @@ main .container h2{
       background-color:#8d6859;
       transition: all .2s;
 }
+.frete{
+      margin: 20px 0;
+}
+.frete .text-frete{
+      display: flex;
+      align-items: center;
+}
+.frete .text-frete p{
+      font-size: 1.5rem;
+      padding: 10px;
+      color: #9f7565;
+      font-weight: 700;
+}
+.frete .image-truck{
+      width: 20px;
+}
