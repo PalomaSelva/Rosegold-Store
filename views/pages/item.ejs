@@ -99,14 +99,14 @@
                               <a class="next" onclick="plusSlides(1)">❯</a>
                         </div>
                         <div class="details">
-                              <h1><%= produto.title %> </h1>
-                              <h2><%= produto.price %> </h2>
-                              <div class="category-controls">
-                                    <p>
-                                    Tamanho
+                              <h1 class="color title"><%= produto.title %> </h1>
+                              <h1 class="price"><%= produto.price %> </h2>
+                              <div class="size">
+                                    <p class="color text">
+                                          Tamanho
                                     </p>
                                     <form>
-                                    <select name="order" id="order appearance-select" aria-label="Ordenar por:">
+                                          <select name="order" id="order appearance-select" aria-label="Ordenar por:">
                                                 <option value="P">P</option>
                                                 <option value="M">M</option>
                                                 <option value="G">G</option>
@@ -114,10 +114,23 @@
                                           </select> 
                                     </form>
                               </div>
+                              <div class="last-details">
+                                    <div id="counter">
+                                          <button name="Subtrair" onclick="decrement()">-</button>
+                                          <span id="currentNumber">1</span>
+                                          <button name="Adicionar" onclick="increment()">+</button>
+                                    </div>
+                                    <button class="buy">
+                                          Comprar
+                                    </button>
+                              </div>
                         </div>
                   </div>
             </main>
 
+
+            
+            <script src="../assets/js/contador.js"></script>
             <script>
                   const image1 = '../<%=produto.image1%>'
                   const image2 = '../<%=produto.image2%>'

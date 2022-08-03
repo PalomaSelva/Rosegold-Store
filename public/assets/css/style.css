@@ -539,13 +539,14 @@ main .container h2{
 
 }
 
-
 #products .content .price{
       padding-top: 3px;
       font-weight: 600 ;
       font-size: 2rem;
-      font-family: 'poppins';
       color:#9f7565;
+}
+.price{
+      font-family: 'poppins';
 }
 
 #products .content .btn{
@@ -599,6 +600,7 @@ main .container h2{
       align-items: flex-start;
       justify-content: center;
       height: 80vh;
+
 }
 
 #item .card-item{
@@ -658,11 +660,15 @@ main .container h2{
       overflow: auto; /* Enable scroll if needed */
       background-color: rgb(0,0,0); /* Fallback color */
       background-color: hsla(0, 0%, 0%, 0.9); /* Black w/ opacity */
-      padding-top: 60px;      
+          
 }
 
 /* Modal Content (image) */
 .modal-content {
+      position: absolute;
+	top: 50%;
+	left: 50%;
+      transform: translate(-50%, -50%);
       margin: auto;
       display: block;
       width: 80%;
@@ -691,6 +697,7 @@ main .container h2{
 
 #item .details{
       margin: 15px 40px;
+
 }
 
 /* Next & previous buttons */
@@ -715,4 +722,101 @@ main .container h2{
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(185, 180, 180, 0.8);
+}
+
+.details .color{
+      color: rgb(68, 68, 68);
+}
+.details .title{
+      font-weight: 300;
+}
+.details .price{
+      font-weight: 600;
+      font-size: 3.7rem;
+      margin:10px 0;
+}
+.details .size{
+      margin: 20px 0px;
+}
+.details .text{
+      font-size: 1.6rem;
+      margin: 5px 0;
+      font-weight: 400;
+}
+.details .size select {
+      appearance: none;
+      min-width: 98%;
+      padding: 13px 10px;
+      margin: 5px 0;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 1.5rem;
+      border:1.5px solid #444444;
+      color: #444444;
+      background: url('../imgs/down-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+      transition: all .4s;
+      outline: none;
+}
+.details .size select:focus,.details .size select:hover {
+      outline: none;
+      border:1.5px solid #B78C82;     
+}
+#counter{
+      border:1.5px solid #444444;
+      padding: 5px 0px;
+      margin: 5px 0;
+      border-radius: 10px;
+      min-width: 10px;
+      max-width: 110px;
+      text-align: center;
+      font-size: 2.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s;
+}
+
+#counter:hover{
+      border:1.5px solid #B78C82;
+      transition: all 0.2s;
+}
+
+#counter span{
+      font-size: 2rem;
+}
+#counter button{
+      background-color:transparent;
+      border: none;
+      padding: 1px 10px;
+}
+
+#counter button:hover{
+      color: #9f7565;
+}
+.details .last-details{
+      display: flex;
+      justify-content: space-between;
+}
+
+.details .last-details .buy{
+      position: relative;
+      width: 200px;
+      margin: 0px 10px;
+      border-radius: 40px;
+      padding:10px;
+      font-size: 1.7rem;;
+      border: none;
+      background-color:#a97e6d;
+      color: white; 
+      transition: all .2s;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+}
+
+.details .last-details .buy:hover{
+      background-color:#8d6859;
+      transition: all .2s;
 }
