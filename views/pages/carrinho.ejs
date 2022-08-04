@@ -17,7 +17,7 @@
                   <div class="header-first">
                         <div class="container">
                               <p>Envio para todo Brasil</p>
-                              <a href="../carrinho">
+                              <a href="carrinho">
                                     <i class="fa-solid fa-cart-shopping"></i>
                               </a>
                         </div>
@@ -67,63 +67,36 @@
 
                   </div>
             </header>
-            <main id="products">
-                  <div class="category-controls">
-                        <h1><%= title %> </h1>
-                        <form>
-                             <select name="order" id="order appearance-select" aria-label="Ordenar por:">
-                                    <option value="price-ascending">Preço: Menor ao maior</option>
-                                    <option value="price-descending">Preço: Maior ao menor</option>
-                                    <option value="created-descending">Mais novo ao mais antigo</option>
-                                    <option value="created-ascending">Mais antigo ao mais novo</option>
-                              </select> 
-                        </form>
-                  </div>
-                  <div class="category-body">
-                        <div class="filtro-text">
-                              <h2>Filtrar por</h2>
-                              <h3>Tamanho</h3>
-                              <div class="check">
-                                    <label class="container">P
-                                          <input type="checkbox" name="P" id="P">
-                                          <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">M
-                                          <input type="checkbox" name="M" id="M">
-                                          <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">G
-                                          <input type="checkbox" name="G" id="G">
-                                          <span class="checkmark"></span>
-                                    </label>
-                              </div>
+            <main id="carrinho">
+                  <div class="carrinho container">
+                        <div class="title">
+                              <h1>Carrinho de compras</h1>
                         </div>
-                              
-                        <div class="all-card-products">
-                              <% for (let i=0;i<products.length;i++) { %>
-                                          <div class="card product">
-                                                <a href="<%=type%>/<%=products[i].id%> ">
-                                                <div class="image">
-                                                      <img src="<%= products[i].image1 %> " alt="Conjunto com bojo"  onmouseover="this.src='<%= products[i].image2 %>';" onmouseout="this.src='<%= products[i].image1 %>';">
-                                                </div>
-                                                </a>
-                                                <div class="content">
-                                                      <p class="title">
-                                                            <a href="com/<%=products[i].id%> ">
-                                                            <%=products[i].title%> 
-                                                            </a>
-                                                      </p>
-                                                      <p class="price">
-                                                            <%=products[i].price%>
-                                                      </p>
-                                                      <button name="button" class="btn"> Adicionar ao carrinho</button>
+                        <div class="compras">
+                              <div class="item-carrinho">
+                                    <div class="card-carrinho">
+                                          <div class="imagem-carrinho">
+                                                <img src="assets/imgs/img-1.png" alt="Item">
+                                          </div>
+                                          <div class="item-detalhes">
+                                                <p> Nome do produto </p>
+                                                <p> Tamanho</p>
+                                                <div id="counter">
+                                                      <button name="Subtrair" onclick="decrement()">-</button>
+                                                      <span id="currentNumber">1</span>
+                                                      <button name="Adicionar" onclick="increment()">+</button>
                                                 </div>
                                           </div>
-                              <% } %> 
-
+                                    </div>
+                              </div>
+                              <div class="info">
+                              bbbbbbbb
+                              </div>
                         </div>
                   </div>
                   
             </main>
+
+            <script src="../assets/js/contador.js"></script>
 </body>
 </html>

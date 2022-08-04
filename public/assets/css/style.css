@@ -612,6 +612,7 @@ main .container h2{
       transition: all .3s;
 }
 #item #card-item1{
+      max-height: 146px;
       height: 146px;
       box-shadow: 5px 5px 10px -7px grey;
 }
@@ -820,19 +821,100 @@ main .container h2{
       background-color:#8d6859;
       transition: all .2s;
 }
-.frete{
-      margin: 20px 0;
+.content-frete{
+      margin: 25px 0;
+      display: flex;
+      flex-direction: column;
 }
-.frete .text-frete{
+.content-frete .text-frete{
       display: flex;
       align-items: center;
 }
-.frete .text-frete p{
+.content-frete .text-frete p{
       font-size: 1.5rem;
       padding: 10px;
       color: #9f7565;
       font-weight: 700;
 }
-.frete .image-truck{
+.content-frete .image-truck{
       width: 20px;
+}
+.content-frete .frete{
+      display: flex;
+      margin: 0;
+}
+.content-frete .frete input{
+      min-width: 170px;
+      width: 170px;
+      padding: 15px 10px;
+      font-size: 1.4rem;
+      font-family: 'poppins',sans-serif;
+      border: 1px solid #434343;
+      border-radius: 10px 0px 0px 10px;
+      border-right: none;
+      outline: none;
+}
+.content-frete .frete input:focus{
+      border: 1px solid #a97e6d;
+}
+.content-frete .frete button{
+      border-radius: 0px 10px 10px 0px;
+      border: 1.6px solid #a97e6d;
+      color: #8d6859;
+      font-weight:500 ;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      font-size: 1.4rem;
+      width: 98%;
+      background-color: transparent;
+      transition: all .3s;
+}
+.content-frete .frete button:hover{
+      background-color: #e2d4d06b;
+      transition: all .3s;
+}
+
+/* Carrinho de compras*/
+
+#carrinho .container{
+      width: 90%;
+      max-width: 1150px;
+      margin: 10px auto;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      
+}
+.carrinho .title{
+      margin: 0 auto;
+      letter-spacing: .1rem; 
+}
+.carrinho .compras{
+      max-width: 1150px;
+      width: 90%;
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+.item-carrinho .card-carrinho{
+      position: relative; 
+      max-width: 600px;
+      width: 550px;
+      min-height: 100px;
+      
+      background-color: #d4c1bc29;
+      margin: 10px 0;
+      display: flex;
+      flex-direction: row;
+}
+.card-carrinho .imagem-carrinho{
+      width: 150px;
+      position: relative;
+}
+.card-carrinho .imagem-carrinho img{
+      width: 100%;
+}
+.item-detalhes{
+      margin: 0px 5px;
 }

@@ -47,6 +47,10 @@ app.get('/noite/:productId', (request,response)=> {
       response.render('pages/item', {produto})
 })
 
+app.get('/carrinho',(request,response)=> {
+      const products = NoiteService.getProdutos()
+      response.render('pages/carrinho', {products,})
+})
 // Criar um service para cada tipo de produto => com,sem e noite
 // Importar pra cá 
 // Mudar o const products de cada => const com / const sem / const noite 
