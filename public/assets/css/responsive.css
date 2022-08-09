@@ -49,11 +49,11 @@
             position: absolute;
             margin-top: 10px;
             flex-direction: column;
-            width: 110vw;
+            width: 120vw;
             justify-content: center;
             align-items: center;
-            left: 100%;
-            transform: translateX(110vw);
+            left: 93%;
+            transform: translateX(120vw);
             transition: .5s transform;
       }
       .menu>li{
