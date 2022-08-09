@@ -41,6 +41,9 @@
       #contact .social-media-content{
             margin: 5px 0px;
       }
+      #contact .container .all-texts{
+            margin: 20px 0;
+      }
       
 
 }
@@ -198,17 +201,13 @@
       }
       #contact .container{ 
             flex-direction: column;
-            width: 100%;
-            
+            width: 100%;   
       }
-
       #contact .container .all-texts .texts{
             padding: 8px;
             text-align: justify;
       }
       #contact .container .all-texts .texts h1{
-            /* text-align: center; */
-            
             margin-bottom: 20px;
       }
       .social-media-content .barra{
