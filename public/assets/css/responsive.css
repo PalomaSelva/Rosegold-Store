@@ -199,14 +199,17 @@
       /* CONTATO  */
       #contact{
             height: 100%;
+            
       }
       #contact .container{ 
             flex-direction: column;
-            width: 100%;   
             height: 100%;
       }
+      #contact .container .all-texts{
+            padding: 10px 0px;
+      }
+
       #contact .container .all-texts .texts{
-            
             text-align: justify;
       }
       #contact .container .all-texts .texts h1{
