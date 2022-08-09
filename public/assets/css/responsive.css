@@ -66,12 +66,13 @@
             position: absolute;
             margin-top: 10px;
             flex-direction: column;
-            width: 120vw;
+            width: 110.5%;
             justify-content: center;
             align-items: center;
-            left: 95%;
-            transform: translateX(120vw);
-            transition: .5s transform;
+            left: 101%;
+            /* transform: translateX(120vw);
+            transition: .5s transform; */
+            display: none; /*Se tirar isso, a animação volta a pegar com bug */
       }
       .menu>li{
             display: flex;
@@ -138,8 +139,11 @@
       }
       
       #checkbox-menu:checked~nav .menu {
+         display: block; /*Se tirar isso, a animação volta a pegar com bug */
         transform: translateX(-108vw);
         transition: 0.5s transform;
+        transition-delay: 1s;
+        
       } 
 
       .mobile_dropdown a{
