@@ -291,8 +291,7 @@ main .container h2{
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
-      padding: 15px;
+      padding: 15px 0px;
       
       
 }
@@ -304,6 +303,7 @@ main .container h2{
       height: 60px;
       background-color: #937e85;
       display: block;
+      margin: 0 10px;
 }
 
 .social-media-content .social-media i{
