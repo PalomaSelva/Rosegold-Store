@@ -3,7 +3,7 @@ import * as ComBojoService from "./services/ComBojo-service.js";
 import * as SemBojoService from "./services/SemBojo-service.js";
 import * as NoiteService from "./services/Noite-service.js";
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT=process.env.PORT || 3000;
 
 app.set('view engine', 'ejs')
 app.set('views','./views')
