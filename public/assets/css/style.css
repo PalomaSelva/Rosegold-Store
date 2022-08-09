@@ -259,7 +259,7 @@ main .container h2{
       min-height: 73vh;
 }
 #contact .container{ 
-      height: 100%;
+      height: 73vh;
       background-color: unset;
       flex-direction: row;
       align-items: center;
@@ -297,7 +297,6 @@ main .container h2{
       
 }
 .social-media-content .social-media{
-
       text-align: center;
 }
 .social-media-content .barra{
@@ -305,7 +304,6 @@ main .container h2{
       height: 60px;
       background-color: #937e85;
       display: block;
-      
 }
 
 .social-media-content .social-media i{
@@ -322,11 +320,10 @@ main .container h2{
       min-width: 400px;
       border-radius: 20px;
       background-color: rgb(255, 255, 255);
-      height: 500px;
+
 }
 .forms form{
       padding: 30px ;
-      height: 100%;
 }
 .forms form label{
       font-size: 1.8rem;
