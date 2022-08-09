@@ -206,14 +206,14 @@
             height: 100%;
       }
       #contact .container .all-texts .texts{
-            padding: 8px;
+            padding: 14px;
             text-align: justify;
       }
       #contact .container .all-texts .texts h1{
             margin-bottom: 20px;
       }
       .social-media-content .barra{
-            
+            margin: 0 4px;
       }
       .forms{
       min-width: 380px;
