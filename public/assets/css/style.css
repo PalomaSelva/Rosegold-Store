@@ -256,18 +256,20 @@ main .container h2{
       background-color: #ddd2cedd;
       position: relative;
       z-index: 1;
-      height: 76vh;
+      min-height: 73vh;
 }
 #contact .container{ 
-      height: 76vh;
+      height: 100%;
+      background-color: unset;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
       max-width: 1150px;
       
+      
 }
 #contact .contato .all-texts{
-      max-width:590px ;
+      max-width:600px;
       padding: 10px;
 }
 
@@ -285,7 +287,7 @@ main .container h2{
       letter-spacing: .3rem;
 }
 
-#contact .contato .all-texts .social-media-content{
+#contact .social-media-content{
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -295,14 +297,15 @@ main .container h2{
       
 }
 .social-media-content .social-media{
+
       text-align: center;
 }
 .social-media-content .barra{
-
       width: .2px;
       height: 60px;
       background-color: #937e85;
       display: block;
+      
 }
 
 .social-media-content .social-media i{
@@ -314,13 +317,16 @@ main .container h2{
 
 
 .forms{
+      max-width: 500px;
       width: 500px;
+      min-width: 400px;
       border-radius: 20px;
       background-color: rgb(255, 255, 255);
-
+      height: 500px;
 }
 .forms form{
       padding: 30px ;
+      height: 100%;
 }
 .forms form label{
       font-size: 1.8rem;
@@ -480,13 +486,14 @@ main .container h2{
       max-width: 980px;
       margin: 10px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, .4fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, .4fr));
       grid-gap: 30px 10px;
       margin-top: 15px;
 }
 
 #products .card {
     max-width: 240px;
+    
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
 }
