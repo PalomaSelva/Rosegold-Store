@@ -10,7 +10,6 @@
             <link rel="stylesheet" href="../assets/css/reset.css">
             <link rel="stylesheet" href="../assets/css/style.css"> 
             <link rel="stylesheet" href="../assets/css/responsive.css">
-            <script src="../assets/js/contador.js"></script>
       </head>
       <body>
             <header>
@@ -132,9 +131,7 @@
                                           <p>Frete</p>
                                     </div>
                                     <div class="frete">
-                                          <div>
-                                                <input type="tel" name="CEP" id="" placeholder="Seu CEP" aria-label="Seu CEP">
-                                          </div>
+                                          <input type="tel" name="CEP" id="" placeholder="Seu CEP" aria-label="Seu CEP">
                                           <button>Calcular</button>
                                     </div>
                               </div>
@@ -226,6 +223,23 @@
                   slides[slideIndex-1].style.display = "block";  
                   }
 </script>
-            
+            <script id="CONTATOR">
+                  var currentNumberWrapper = window.document.getElementById('currentNumber')
+                  var currentNumber = 1;
+                  currentNumberWrapper.innerHTML=currentNumber
+
+                  function decrement(){
+                        currentNumber-=1;
+                        if (currentNumber<=1) {
+                              currentNumber =  1;
+                        }
+                        currentNumberWrapper.innerHTML=currentNumber;
+                  }
+
+                  function increment(){
+                        currentNumber+=1;
+                        currentNumberWrapper.innerHTML=currentNumber;
+                  }
+            </script>
 </body>
 </html>
