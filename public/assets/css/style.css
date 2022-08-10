@@ -629,14 +629,14 @@ main .container h2{
       box-shadow: 5px 5px 10px -7px grey;
 }
 #item .card-item .photo{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    min-width: 80px;
-    max-height: 140px;
-    overflow: hidden;
-    background-color: #937e85;
-    border-radius: 15px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      min-width: 80px;
+      max-height: 140px;
+      overflow: hidden;
+      background-color: #937e85;
+      border-radius: 15px;
     
 }
 
@@ -787,13 +787,13 @@ main .container h2{
       padding: 5px 0px;
       margin: 5px 0;
       border-radius: 10px;
-      min-width: 10px;
-      max-width: 110px;
+      min-width: 70px;
+      max-width: 22%;
       text-align: center;
       font-size: 2.8rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       transition: all 0.2s;
 }
 
@@ -821,7 +821,7 @@ main .container h2{
 
 .details .last-details .buy{
       position: relative;
-      width: 200px;
+      width: 78%;
       margin: 0px 10px;
       border-radius: 40px;
       padding:10px;
