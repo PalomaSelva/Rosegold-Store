@@ -30,7 +30,7 @@
 
 }
 
-@media (max-width:890px) and (min-width: 750px){
+@media (max-width:890px){
 
       #contact{
             height: 100%;
@@ -166,10 +166,10 @@
             flex-direction: column;
       }
       #btn-2{
-      position: relative;
-      margin-top: 5%;
-      font-size: 70px;
-      padding: 50px;
+            position: relative;
+            margin-top: 5%;
+            font-size: 70px;
+            padding: 50px;
       }
       [id^=btn]:checked + ul{
             display: block;
@@ -200,28 +200,14 @@
 
 
       /* CONTATO  */
-      #contact{
-            height: 100%;
-            
-      }
-      #contact .container{ 
-            flex-direction: column;
-            height: 100%;
-      }
-      #contact .container .all-texts{
-            padding: 10px 0px;
-      }
 
-      #contact .container .all-texts .texts{
-            text-align: justify;
-      }
       #contact .container .all-texts .texts h1{
             margin-bottom: 20px;
       }
 
       .forms{
-      min-width: 380px;
-      width: 450px;
+      max-width: 90vw;
+      min-width: 250px;
       }
       
       /* PRODUTOS */
