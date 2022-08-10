@@ -83,6 +83,7 @@
       .principal-photo-card{
             width: 80%;
             min-width: 200px;
+            align-self: center;
       }
 
 
