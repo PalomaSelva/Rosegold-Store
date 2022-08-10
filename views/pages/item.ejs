@@ -71,32 +71,34 @@
             </header>
             <main id="item">
                   <div class="item">
-                        <div class="photos-card">
-                              <div class="card-item" id="card-item1" onclick="changePhoto1()">
-                                    <div class="photo">
-                                          <img src="../<%=produto.image1%>" alt="Produto - 1ª imagem">
+                        <div class="divisao">
+                              <div class="photos-card">
+                                    <div class="card-item" id="card-item1" onclick="changePhoto1()">
+                                          <div class="photo">
+                                                <img src="../<%=produto.image1%>" alt="Produto - 1ª imagem">
+                                          </div>
                                     </div>
-                              </div>
 
-                              <div class="card-item" id="card-item2" onclick="changePhoto2()">
-                                    <div class="photo">
-                                          <img src="../<%=produto.image2%>" alt="Produto - 2ª imagem" id="photo2">
+                                    <div class="card-item" id="card-item2" onclick="changePhoto2()">
+                                          <div class="photo">
+                                                <img src="../<%=produto.image2%>" alt="Produto - 2ª imagem" id="photo2">
+                                          </div>
                                     </div>
                               </div>
-                        </div>
-                        <div class="principal-photo-card">
-                              <img src="../<%=produto.image1%>" alt="Imagem principal" id="principal-photo">
-                        </div>
-                        <div id="myModal" class="modal">
-                              <span class="close">&times;</span>
-                              <div class="mySlides">
-                                    <img class="modal-content" id="img01">
+                              <div class="principal-photo-card">
+                                    <img src="../<%=produto.image1%>" alt="Imagem principal" id="principal-photo">
                               </div>
-                              <div class="mySlides">
-                                    <img class="modal-content" id="img02">
+                              <div id="myModal" class="modal">
+                                    <span class="close">&times;</span>
+                                    <div class="mySlides">
+                                          <img class="modal-content" id="img01">
+                                    </div>
+                                    <div class="mySlides">
+                                          <img class="modal-content" id="img02">
+                                    </div>
+                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1)">❯</a>
                               </div>
-                              <a class="prev" onclick="plusSlides(-1)">❮</a>
-                              <a class="next" onclick="plusSlides(1)">❯</a>
                         </div>
                         <div class="details">
                               <h1 class="color title"><%= produto.title %> </h1>

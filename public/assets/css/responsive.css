@@ -45,6 +45,47 @@
       #contact .container .all-texts{
             margin: 20px 0;
       }
+
+
+      #item .item{
+            flex-direction: column;
+            height: 100%;
+      }
+      #item .card-item{
+            max-width: 130px;
+            width: 80%;
+            background-color:  #9f7565;
+            border-radius: 15px;
+            margin: 10px 0px;
+            margin-bottom: 15px;
+            transition: all .3s;
+      
+}
+#item .card-item .photo{
+      max-width: 130px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      max-height: 140px;
+      overflow: hidden;
+      background-color: #937e85;
+      border-radius: 15px;
+}
+
+#item #card-item1{
+      max-height: 146px;
+      
+      height: 100%;
+      box-shadow: 5px 5px 10px -7px grey;
+}
+
+      
+      .principal-photo-card{
+            width: 80%;
+            min-width: 200px;
+      }
+
+
       
 
 }
@@ -228,10 +269,16 @@
 
 
 
-
-
+      /* ITEM */
       .modal-content {
             width: 100%;
       }
+
+
+      /* #item #card-item1{
+      max-height: 146px;
+      height: 146px;
+      box-shadow: 5px 5px 10px -7px grey;
+} */
 
 }
