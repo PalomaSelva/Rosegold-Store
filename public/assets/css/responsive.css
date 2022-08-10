@@ -70,7 +70,7 @@
             position: absolute;
             margin-top: 10px;
             width: 110.5%;
-            left: 97%;
+            left: -10.5%;
             display: none; /*Se tirar isso, a animação volta a pegar com bug */
       }
       .menu>li{
@@ -139,11 +139,14 @@
       
       #checkbox-menu:checked~nav .menu {
       display: block; /*Se tirar isso, a animação volta a pegar com bug */
-        transform: translateX(-108vw);
+        
         transition: 0.5s transform;
         transition-delay: 1s;
         
       } 
+      #checkbox-menu:checked~nav .all-cards{
+            z-index: -10;
+      }
 
       .mobile_dropdown a{
             padding: 0;
@@ -190,7 +193,7 @@
 
       .all-cards{
             flex-direction: column;
-            z-index: -1;
+            z-index: 1;
             height: 100%;
       }
       .card{
