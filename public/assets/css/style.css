@@ -670,7 +670,7 @@ main .container h2{
 /* The Modal (background) */
 .modal {
       display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
+      position: fixed ;/* Stay in place */
       z-index: 50; /* Sit on top */
       left: 0;
       top: 0;
@@ -679,6 +679,7 @@ main .container h2{
       overflow: auto; /* Enable scroll if needed */
       background-color: rgb(0,0,0); /* Fallback color */
       background-color: hsla(0, 0%, 0%, 0.9); /* Black w/ opacity */
+      overflow-x: scroll;
           
 }
 
@@ -692,6 +693,7 @@ main .container h2{
       display: block;
       width: 80%;
       max-width: 500px;
+      scroll-snap-align: start;
 
 }
 
@@ -898,7 +900,7 @@ main .container h2{
 
 #carrinho .container{
       width: 90%;
-      max-width: 1150px;
+      max-width: 1100px;
       margin: 10px auto;
       flex-direction: column;
       align-items: center;
@@ -906,35 +908,71 @@ main .container h2{
       
 }
 .carrinho .title{
-      margin: 0 auto;
+      align-self: flex-start;
       letter-spacing: .1rem; 
 }
-.carrinho .compras{
-      max-width: 1150px;
-      width: 90%;
-      
+.carrinho .itens-compras{
+      width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
 }
-.item-carrinho .card-carrinho{
+.itens-carrinho{
+      margin: 15px 0px;
+      max-width: 700px;
+      width: 100%;
+      flex-direction: column;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(95,95,95,0.43); 
+box-shadow: 0px 0px 5px 0px rgba(95,95,95,0.43);
+      border-radius: 10px;
+}
+/* .itens-carrinho .card-carrinho{
       position: relative; 
-      max-width: 600px;
-      width: 550px;
+      max-width: 95%;
+      width: 100%;
       min-height: 100px;
-      
       background-color: #d4c1bc29;
-      margin: 10px 0;
+      margin: 10px auto;
       display: flex;
       flex-direction: row;
+} */
+
+.itens-carrinho .card-carrinho{
+      position: relative; 
+      max-width: 100%;
+      width: 100%;
+      min-height: 100px;
+      margin: 10px auto;
 }
-.card-carrinho .imagem-carrinho{
+.itens-carrinho .card-carrinho table{
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+}
+
+.card-carrinho table th{
+      font-size: 1.7rem;
+      font-weight: 500;
+      border-bottom: .4px solid #8d685971;
+}
+
+.card-carrinho table th,td{
+      padding: 10px 10px;
+}
+
+.card-carrinho table .table-header th:nth-child(1){
+      text-align: left;
+}
+.card-carrinho table td #counter, .card-carrinho table td .price{
+      margin: 0 auto;
+}
+
+.imagem-carrinho{
       width: 150px;
       position: relative;
 }
-.card-carrinho .imagem-carrinho img{
+.imagem-carrinho img{
       width: 100%;
 }
-.item-detalhes{
-      margin: 0px 5px;
-}
+

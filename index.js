@@ -4,7 +4,7 @@ import * as SemBojoService from "./services/SemBojo-service.js";
 import * as NoiteService from "./services/Noite-service.js";
 const app = express();
 const PORT=process.env.PORT || 3000;
-
+ 
 app.set('view engine', 'ejs')
 app.set('views','./views')
 
@@ -12,7 +12,6 @@ app.listen(PORT, ()=>{
       console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
 app.use(express.static('public'))
-
 
 app.get('/com',(request,response)=> {
       const products = ComBojoService.getProdutos()
