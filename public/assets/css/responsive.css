@@ -271,10 +271,18 @@
       }
 
 
-      /* #item #card-item1{
-      max-height: 146px;
-      height: 146px;
-      box-shadow: 5px 5px 10px -7px grey;
-} */
+
+      /* Carrinho de compras */
+.produto-carrinho{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: left;
+}
+
+.info-produto-carrinho{
+      padding: 0px 10px;
+}
+
 
 }

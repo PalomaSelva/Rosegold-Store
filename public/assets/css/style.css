@@ -789,8 +789,8 @@ main .container h2{
       padding: 5px 0px;
       margin: 5px 0;
       border-radius: 10px;
-      min-width: 70px;
-      max-width: 22%;
+      max-width: 70px;
+      width: 90%;
       text-align: center;
       font-size: 2.8rem;
       display: flex;
@@ -926,16 +926,6 @@ main .container h2{
       box-shadow: 0px 0px 5px 0px rgba(95,95,95,0.43);
       border-radius: 10px;
 }
-/* .itens-carrinho .card-carrinho{
-      position: relative; 
-      max-width: 95%;
-      width: 100%;
-      min-height: 100px;
-      background-color: #d4c1bc29;
-      margin: 10px auto;
-      display: flex;
-      flex-direction: row;
-} */
 
 .itens-carrinho .card-carrinho{
       position: relative; 
@@ -949,6 +939,7 @@ main .container h2{
       width: 100%;
       text-align: center;
       border-collapse: collapse;
+      
 }
 
 .card-carrinho table th{
@@ -969,11 +960,36 @@ main .container h2{
 }
 
 .imagem-carrinho{
-      max-width: 150px;
+      max-width: 100px;
       width: 90%;
       position: relative;
 }
 .imagem-carrinho img{
       width: 100%;
+}
+
+.produto-carrinho{
+      display: flex;
+      align-items: center;
+      text-align: left;
+      
+}
+.info-produto-carrinho{
+      padding: 10px;
+      
+}
+.info-produto-carrinho p{
+      padding: 0;
+      margin: 0;
+}
+.RemoveItem .remove{
+      text-decoration: underline;
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 0px;
+}
+
+.RemoveItem:hover, .RemoveItem:focus{
+      color: #8d6859;
 }
 

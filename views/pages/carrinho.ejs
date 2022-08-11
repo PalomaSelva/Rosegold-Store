@@ -82,11 +82,18 @@
                                                       <th>Preço</th>
                                                 </tr>
                                                 <tr>
-                                                      <td>
+                                                      <td class="produto-carrinho">
                                                             <div class="imagem-carrinho">
                                                                   <img src="assets/imgs/img-1.png" alt="Item">
                                                             </div>
+                                                            <div class="info-produto-carrinho">
+                                                                  <p>Nome do produto</p>
+                                                                  <div class="RemoveItem">
+                                                                        <p class="remove"> Remover</p>                                                            
+                                                                  </div>
+                                                            </div>
                                                       </td>
+
                                                       <td>
                                                             <div id="counter">
                                                                   <button name="Subtrair" onclick="decrement()">-</button>
@@ -94,6 +101,7 @@
                                                                   <button name="Adicionar" onclick="increment()">+</button>
                                                             </div>
                                                       </td>
+
                                                       <td>
                                                             <div class="price">
                                                                   <p>
