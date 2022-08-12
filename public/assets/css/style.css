@@ -219,7 +219,7 @@ main .container h1{
       letter-spacing: .1rem;
       align-self: center;
 }
-main .container p{
+#guia .container p{
       margin-top: 15px; 
       font-size: 1.8rem; 
       line-height: 2rem;
@@ -911,6 +911,10 @@ main .container h2{
       align-self: flex-start;
       letter-spacing: .1rem; 
 }
+
+.carrinho p{
+      font-size: 1.8rem;
+}
 .carrinho .itens-compras{
       width: 100%;
       display: flex;
@@ -921,12 +925,14 @@ main .container h2{
       margin: 15px 0px;
       max-width: 700px;
       width: 100%;
+      display: flex;
       flex-direction: column;
-      -webkit-box-shadow: 0px 0px 5px 0px rgba(95,95,95,0.43); 
-      box-shadow: 0px 0px 5px 0px rgba(95,95,95,0.43);
       border-radius: 10px;
 }
-
+.shadow{
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(95,95,95,0.43); 
+      box-shadow: 0px 0px 5px 0px rgba(95,95,95,0.43);
+}
 .itens-carrinho .card-carrinho{
       position: relative; 
       max-width: 100%;
@@ -979,8 +985,7 @@ main .container h2{
       
 }
 .card-carrinho .produto-carrinho .info-produto-carrinho p{
-      padding: 0;
-      margin: 0;
+      margin: 2px 0;
 }
 .RemoveItem .remove{
       text-decoration: underline;
@@ -993,3 +998,53 @@ main .container h2{
       color: #8d6859;
 }
 
+.card-resumo-pedido{
+      padding: 15px;
+      margin: 15px 20px;
+      width: 28%;
+      max-height: 230px;
+      min-height: 200px;
+      max-width: 700px;
+      min-width: 270px;
+      
+}
+.card-resumo-wrapped{
+      display: flex;
+      flex-direction: column; 
+      justify-content: space-between;
+      height: 100%;
+      min-height: 200px;
+      
+}
+.title-pedido{
+      border-bottom: .4px solid #8d685971;
+      
+}
+.Subtotal{
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding-top: 0px;
+}
+
+.card-resumo-pedido button{
+      width: 100%;
+      padding: 10px;
+      font-size: 1.9rem;
+      font-weight: 400;
+      background-color: #9f7565;
+      color: white;
+      border: 1px solid #9f7565a1;
+      margin:5px 0 ;
+}
+
+/* .card-resumo-wrapped .final a{
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      text-decoration: underline;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color:#281f1b;
+} */
