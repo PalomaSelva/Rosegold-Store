@@ -74,7 +74,7 @@
                         </div>
                         <div class="itens-compras">
                               <div class="itens-carrinho shadow">
-                                    <div class="card-carrinho">
+                                    <div class="card-carrinho" >
                                           <table>
                                                 <tr class="table-header">
                                                       <th>Produto</th>
@@ -84,7 +84,7 @@
                                                 <tr>
                                                       <td class="produto-carrinho">
                                                             <div class="imagem-carrinho">
-                                                                  <img src="assets/imgs/img-1.png" alt="Item">
+                                                                  <img src="assets/imgs/img1.png" alt="Item">
                                                             </div>
                                                             <div class="info-produto-carrinho">
                                                                   <p>Nome do produto</p>
@@ -95,11 +95,15 @@
                                                       </td>
 
                                                       <td>
+                                                            <% for (let i = 0; i < 3; i++) {  %>
                                                             <div id="counter">
                                                                   <button name="Subtrair" onclick="decrement()">-</button>
-                                                                  <span id="currentNumber"></span>
+                                                                  <span class="currentNumber<%=i%>"></span>
                                                                   <button name="Adicionar" onclick="increment()">+</button>
                                                             </div>
+                                                             <% } %> 
+                                                             
+
                                                       </td>
 
                                                       <td>
