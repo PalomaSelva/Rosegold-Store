@@ -257,6 +257,7 @@ main .container h2{
       position: relative;
       z-index: 1;
       min-height: 73vh;
+      font-size: 1.8rem; 
 }
 #contact .container{ 
       height: 73vh;

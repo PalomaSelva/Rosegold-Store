@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
       <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,12 +97,11 @@
                                                       <td>
                                                             <% for (let i = 0; i < 3; i++) {  %>
                                                             <div id="counter">
-                                                                  <button name="Subtrair" onclick="decrement()">-</button>
+                                                                  <button name="Subtrair" id="sub<%=i%>">-</button>
                                                                   <span class="currentNumber<%=i%>"></span>
-                                                                  <button name="Adicionar" onclick="increment()">+</button>
+                                                                  <button name="Adicionar" id="add<%=i%>" >+</button>
                                                             </div>
                                                              <% } %> 
-                                                             
 
                                                       </td>
 
@@ -137,7 +136,14 @@
                   </div>
                   
             </main>
+            <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger
+            intent="WELCOME"
+            chat-title="RosegoldeLoja"
+            agent-id="2ae7b0cf-ff65-4fd6-a7a2-cd812f8a8c0d"
+            language-code="pt-br"
+            ></df-messenger>
 
-            <script src="../assets/js/contador.js"></script>
+            <script src="../assets/js/contador2.js"></script>
 </body>
 </html>
