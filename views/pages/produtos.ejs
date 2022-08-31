@@ -14,7 +14,7 @@
       </head>
       <body>
             <header>
-                  <div class="header-first">
+                  <div class="header-one">
                         <div class="container">
                               <p>Envio para todo Brasil</p>
                               <a href="../carrinho">
@@ -68,60 +68,65 @@
                   </div>
             </header>
             <main id="products">
-                  <div class="category-controls">
-                        <h1><%= title %> </h1>
-                        <form>
-                             <select name="order" id="order appearance-select" aria-label="Ordenar por:">
-                                    <option value="price-ascending">Preço: Menor ao maior</option>
-                                    <option value="price-descending">Preço: Maior ao menor</option>
-                                    <option value="created-descending">Mais novo ao mais antigo</option>
-                                    <option value="created-ascending">Mais antigo ao mais novo</option>
-                              </select> 
-                        </form>
-                  </div>
+                  <section>
+                        <div class="category-controls">
+                              <h1><%= title %> </h1>
+                              <form>
+                              <select name="order" id="order appearance-select" aria-label="Ordenar por:">
+                                          <option value="price-ascending">Preço: Menor ao maior</option>
+                                          <option value="price-descending">Preço: Maior ao menor</option>
+                                          <option value="created-descending">Mais novo ao mais antigo</option>
+                                          <option value="created-ascending">Mais antigo ao mais novo</option>
+                                    </select> 
+                              </form>
+                        </div>
+                  </section>
                   <div class="category-body">
-                        <div class="filtro-text">
-                              <h2>Filtrar por</h2>
-                              <h3>Tamanho</h3>
-                              <div class="check">
-                                    <label class="container">P
-                                          <input type="checkbox" name="P" id="P">
-                                          <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">M
-                                          <input type="checkbox" name="M" id="M">
-                                          <span class="checkmark"></span>
-                                    </label>
-                                    <label class="container">G
-                                          <input type="checkbox" name="G" id="G">
-                                          <span class="checkmark"></span>
-                                    </label>
+                        <aside>
+                              <div class="filtro-text">
+                                    <h2>Filtrar por</h2>
+                                    <h3>Tamanho</h3>
+                                    <div class="check">
+                                          <label class="container">P
+                                                <input type="checkbox" name="P" id="P">
+                                                <span class="checkmark"></span>
+                                          </label>
+                                          <label class="container">M
+                                                <input type="checkbox" name="M" id="M">
+                                                <span class="checkmark"></span>
+                                          </label>
+                                          <label class="container">G
+                                                <input type="checkbox" name="G" id="G">
+                                                <span class="checkmark"></span>
+                                          </label>
+                                    </div>
                               </div>
-                        </div>
-                              
-                        <div class="all-card-products">
-                              <% for (let i=0;i<products.length;i++) { %>
-                                          <div class="card product">
-                                                <a href="<%=type%>/<%=products[i].id%> ">
-                                                <div class="image">
-                                                      <img src="<%= products[i].image1 %> " alt="Conjunto com bojo"  onmouseover="this.src='<%= products[i].image2 %>';" onmouseout="this.src='<%= products[i].image1 %>';">
+                        </aside>    
+                        <section>
+                              <div class="all-card-products">
+                                    <% for (let i=0;i<products.length;i++) { %>
+                                                <div class="card product">
+                                                      <a href="<%=type%>/<%=products[i].id%> ">
+                                                      <div class="image">
+                                                            <img src="<%= products[i].image1 %> " alt="Conjunto com bojo"  onmouseover="this.src='<%= products[i].image2 %>';" onmouseout="this.src='<%= products[i].image1 %>';">
+                                                      </div>
+                                                      </a>
+                                                      <div class="content">
+                                                            <p class="title">
+                                                                  <a href="com/<%=products[i].id%> ">
+                                                                  <%=products[i].title%> 
+                                                                  </a>
+                                                            </p>
+                                                            <p class="price">
+                                                                  <%=products[i].price%>
+                                                            </p>
+                                                            <button name="button" class="btn"> Adicionar ao carrinho</button>
+                                                      </div>
                                                 </div>
-                                                </a>
-                                                <div class="content">
-                                                      <p class="title">
-                                                            <a href="com/<%=products[i].id%> ">
-                                                            <%=products[i].title%> 
-                                                            </a>
-                                                      </p>
-                                                      <p class="price">
-                                                            <%=products[i].price%>
-                                                      </p>
-                                                      <button name="button" class="btn"> Adicionar ao carrinho</button>
-                                                </div>
-                                          </div>
-                              <% } %> 
+                                    <% } %> 
 
-                        </div>
+                              </div>
+                        </section> 
                   </div>
                   
             </main>

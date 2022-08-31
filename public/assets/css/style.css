@@ -34,19 +34,19 @@ h3{
       padding: 10px 20px;
 }
 /* HEADER PART ONE */
-.header-first{
+.header-one{
       height: 10vh;
 }
-.header-first p{
+.header-one p{
       font-size: 1.7em;
       font-weight: 200;
       text-transform: uppercase;
 }
-.header-first i{
+.header-one i{
       font-size: 2em;
       color: rgb(0, 0, 0);
 }
-.header-first a{
+.header-one a{
       text-decoration: none;
 }
 /* HEADER PART TWO */
@@ -315,7 +315,7 @@ main .container h2{
 }
 
 
-.forms{
+.form-container{
       max-width: 500px;
       width: 500px;
       min-width: 400px;
@@ -323,17 +323,17 @@ main .container h2{
       background-color: rgb(255, 255, 255);
 
 }
-.forms form{
+.form-container form{
       padding: 30px ;
 }
-.forms form label{
+.form-container form label{
       font-size: 1.8rem;
       
 }
-.forms form .form-elements{
+.form-container form .form-elements{
       margin: 20px 0px;
 }
-.forms form input,.forms form textarea{
+.form-container form input,.form-container form textarea{
       margin-top: 0px;
       width: 100%;
       border-radius: 10px;
@@ -342,7 +342,7 @@ main .container h2{
       border: none;
       background-color:#ddd2ce45 ;
 }
-.forms form button{
+.form-container form button{
       position: relative;
       top:20px;
       width: 100%;
