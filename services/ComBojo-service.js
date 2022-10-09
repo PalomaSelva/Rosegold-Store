@@ -24,6 +24,13 @@ const produtos =[
             price: "R$50",
 
       },
+      {
+            id:4,
+            image1:"./assets/imgs/img2.jpg",
+            image2:"./assets/imgs/img1.jpeg",            
+            title:"Produto 5",
+            price: "R$60",
+      }
       
 
       
