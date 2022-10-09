@@ -395,10 +395,12 @@ main .container h2{
       padding: 0px 10px;
       height: 100%;
 }
+
 #products .category-body .filtro-text{
       padding: 10px 0px;
       color: #434343;
-      width: 23%;
+      max-width: 200px;
+      width: 100%;
       letter-spacing: 0.08rem;
       
 }
@@ -480,7 +482,7 @@ main .container h2{
 
 
 #products .category-body .all-card-products {
-      width: 90%;
+      width: 100%;
       max-width: 980px;
       margin: 10px;
       display: grid;

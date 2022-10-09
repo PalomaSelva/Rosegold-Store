@@ -68,21 +68,17 @@
                   </div>
             </header>
             <main id="products">
-                  <section>
                         <div class="category-controls">
                               <h1><%= title %> </h1>
                               <form>
                               <select name="order" id="order appearance-select" aria-label="Ordenar por:">
-                                          <option value="price-ascending">Preço: Menor ao maior</option>
+                                          <option value="price-ascending" onclick="">Preço: Menor ao maior</option>
                                           <option value="price-descending">Preço: Maior ao menor</option>
                                           <option value="created-descending">Mais novo ao mais antigo</option>
                                           <option value="created-ascending">Mais antigo ao mais novo</option>
                                     </select> 
                               </form>
-                        </div>
-                  </section>
                   <div class="category-body">
-                        <aside>
                               <div class="filtro-text">
                                     <h2>Filtrar por</h2>
                                     <h3>Tamanho</h3>
@@ -101,8 +97,8 @@
                                           </label>
                                     </div>
                               </div>
-                        </aside>    
-                        <section>
+                          
+                        
                               <div class="all-card-products">
                                     <% for (let i=0;i<products.length;i++) { %>
                                                 <div class="card product">
@@ -124,9 +120,8 @@
                                                       </div>
                                                 </div>
                                     <% } %> 
-
                               </div>
-                        </section> 
+                        
                   </div>
                   
             </main>
@@ -137,5 +132,7 @@
             agent-id="2ae7b0cf-ff65-4fd6-a7a2-cd812f8a8c0d"
             language-code="pt-br"
             ></df-messenger>
+
+            
 </body>
 </html>
