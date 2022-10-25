@@ -1,0 +1,81 @@
+:root{
+    background-color:#DDD2CE ;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: 100vh;
+    
+}
+.login-container{
+    width: 30vw; /* desktop */
+    
+    
+}
+.login-container .header h2{
+    font-family: Staatliches;
+    font-weight: 400;
+    letter-spacing: 0.11em;
+    line-height: 47.5px;
+    color: #B0715F;
+    text-align: center;
+}
+.login-container .header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.login-container .header span{
+    color: #7C7C8A;
+    font-size: 1.9rem;
+
+}
+.form-login-wrapped{
+    margin: 28px 0;
+}
+.form-login label:not(.control){
+    font-size: 1.7rem;
+    color: #ffff;
+    font-weight: 700;
+}
+.form-login input{
+    margin-top: 8px;
+    width: 100%;
+    padding: 16px 12px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+
+}
+.form-login input:focus{
+    border: 1px solid #9F7565;
+}
+
+.form-elements{
+    margin-bottom: 24px;
+}
+
+.btn{
+    width: 100%;
+    padding: 16px 12px;
+    background-color: #9F7565;
+    font-size: 1.7rem;
+    color: #ffff;
+    border-radius: 5px;
+    border: none;
+    transition: all .4s;
+}
+.btn:hover{
+    background:#815c4d;
+    transition: all .4s;
+}
+.footer{
+    margin: 24px 0;
+}
+.footer div{
+    text-decoration: underline;
+    margin: 12px 0;
+    text-align: center;
+    color: #656579;
+    font-size: 1.4rem;
+}

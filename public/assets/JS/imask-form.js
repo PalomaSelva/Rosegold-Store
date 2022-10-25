@@ -1,4 +1,3 @@
-
 var phone = document.querySelector('#phone');
 console.log(phone)
 var phonePattern = {
@@ -6,6 +5,3 @@ var phonePattern = {
 };
 var mask = IMask(phone, phonePattern);
 
-
-
-//Validação

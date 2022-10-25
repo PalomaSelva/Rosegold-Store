@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/checkbox.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="header">
+            <img src="" alt="">
+            <h2 >ROSEGOLDE</h2>
+            <span>Faça o login e comece a usar</span>
+        </div>
+        
+        <div class="form-login">
+            <div class="form-login-wrapped">
+                <form action="">    
+                    <div class="form-elements">
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="email" placeholder="paloma@example.com" onblur="validacaoEmail(email)"><br>
+                        <div class="msgemail"></div>
+                    </div>
+                    <div class="form-elements">
+                        <label for="email">Senha</label><br>
+                        <input type="password" id="password" name="password" placeholder="**********" onblur="validacaoEmail(email)"><br>
+                    <div class="msgemail"></div>
+                    </div>
+                    <label class="control control-checkbox">
+                        Lembrar de mim
+                        <input type="checkbox" checked="checked" />
+                        <div class="control_indicator"></div>
+                    </label>
+            </div>
+
+            <button class="btn">
+                Entrar na plataforma
+            </button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <div>Esqueceu a senha?</div>
+            <div>Ainda não possui uma conta? CRIE AGORA!</div>
+        </div>
+    </div>
+</body>
+</html>
