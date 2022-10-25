@@ -10,6 +10,7 @@
             <link rel="stylesheet" href="./assets/css/reset.css">
             <link rel="stylesheet" href="./assets/css/style.css"> 
             <link rel="stylesheet" href="./assets/css/responsive.css">
+            <script src="https://unpkg.com/imask@6.4.3/dist/imask.js"></script>
       </head>
       <body>
             <header>
@@ -90,14 +91,15 @@
                               </address>
                         </div>
                         <div class="form-container">
-                              <form>
+                              <form name="f1">
                                     <div class="form-elements">
                                           <label for="name">Nome completo</label><br>
                                           <input type="text" id="name" placeholder="Digite o seu nome"><br>
                                     </div>
                                     <div class="form-elements">
                                           <label for="email">Email</label><br>
-                                          <input type="email" id="email" placeholder="Digite um email válido"><br>
+                                          <input type="email" id="email" name="email" placeholder="Digite um email válido" onblur="validacaoEmail(email)"><br>
+                                          <div class="msgemail"></div>
                                     </div>
                                     <div class="form-elements">
                                           <label for="phone">Telefone</label><br>
@@ -120,6 +122,7 @@
             agent-id="2ae7b0cf-ff65-4fd6-a7a2-cd812f8a8c0d"
             language-code="pt-br"
             ></df-messenger>
-
+            <script type="module" src="./assets/JS/imask-form.js"></script>
+            <script src="./assets/JS/validacion.js"></script>
       </body>
 </html>

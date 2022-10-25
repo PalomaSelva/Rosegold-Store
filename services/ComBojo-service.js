@@ -46,7 +46,7 @@ function getProdutosByID(productId){
             return (product.id === Number(productId))
       })
 }
-
+/* 
 function comparePRICE(a,b){
       if (a.price < b.price)
             return -1;
@@ -56,5 +56,5 @@ function comparePRICE(a,b){
 }
       var dec = produtos.sort(comparePRICE)
 console.log(dec) //ISSO TEM QUE FUNCIONAR LÁ NA PÁGINA, AO CLICAR NA OPTION DO SELECT
-
-export {getProdutos,getProdutosByID,comparePRICE}
+ */
+export {getProdutos,getProdutosByID}

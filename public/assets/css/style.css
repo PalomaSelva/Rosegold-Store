@@ -1042,6 +1042,12 @@ main .container h2{
       border: 1px solid #9f7565a1;
       margin:5px 0 ;
 }
+.msgemail{
+      color: red;
+      font-size: 1.3rem;
+      margin: 8px 0 0 6px;
+      
+}
 
 /* .card-resumo-wrapped .final a{
       display: block;
