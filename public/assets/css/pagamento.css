@@ -1,0 +1,100 @@
+.frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 73vh;
+}
+#payment,.credit-card ,.credit-card form{
+    display: flex;
+}
+
+#payment{
+    width: 86.5vw;
+}
+.credit-card{
+    width: 70%;
+    padding: 28px 48px 20px 48px;
+    border-radius: 14px;
+    background-color: #E0CFC9;
+    flex-direction: column;
+}
+.card-form-wrapped form{
+    flex-direction: column;
+}
+.card-logo{
+    font-size: 2rem;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+.card-logo svg{
+    margin: 0 8px;
+}
+.card-form-wrapped {
+    width: 40%;
+}
+.card-form-wrapped form{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.card-form-wrapped form label{
+    color: #968181;
+    font-weight: 500;
+}
+.card-form-wrapped form input{
+    padding: 10px 8px; 
+    border: 1.5px solid #CBB8B2;
+    background-color: white;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 8px;
+}
+.last-inputs{
+    display: flex;
+    justify-content: space-between;
+  }
+  .last-inputs .input-wrapped{
+    width: 45%;
+    margin: 0;
+  }
+.input-wrapped, .last-inputs{
+    margin-bottom: 16px;
+}
+button{
+    padding: 16px 8px; 
+    width: 100%;
+    border-radius: 6px;
+    background-color: #9F7565;
+    font-weight: 500;
+    border: none;
+    transition: all .5s;
+    color: #ffff;
+}
+button:hover{
+    background:#815c4d;
+}
+.shop-resume{
+    width: 25%;
+    margin: 0 0 0 20px;
+    background-color: rgba(221, 210, 206, 0.36);
+}
+.credit-card-image{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cc-bg{
+    width: 100%;
+    height: 230px;
+    background:no-repeat ;
+    background-image: url('../imgs/card.svg');
+     
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    
+}

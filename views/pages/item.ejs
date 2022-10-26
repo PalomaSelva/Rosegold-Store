@@ -12,60 +12,7 @@
             <link rel="stylesheet" href="../assets/css/responsive.css">
       </head>
       <body>
-            <header>
-                  <div class="header-one">
-                        <div class="container">
-                              <p>Envio para todo Brasil</p>
-                              <a href="../../carrinho">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                              </a>
-                        </div>
-                  </div>
-
-                  <div class="header-two">
-                        <div class="container">
-                             
-                              <img src="../assets/imgs/rosegolde.png" alt="logo">   
-                        
-                        <div class="menu-section">
-                              <!--Criando o menu hamburguer-->
-                              <div class="container-menu">
-                                    <input type="checkbox" id="checkbox-menu">
-                                    <label class="menu-button-container" for="checkbox-menu">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    </label>
-                              <!--------------------------->
-                                    <nav>
-                                          <ul class="menu">
-                                                <li><a href="../index.html">Home</a></li>
-                                                <li class="mobile_dropdown">
-                                                      <a href="#">
-                                                      <label for="btn-2" class="first">
-                                                                  Produtos
-                                                                  <span class="fas fa-caret-down"></span>
-                                                      </label>
-                                                      </a>
-                                                      <input type="checkbox" id="btn-2">
-                                                      <ul>
-                                                      <li><a href="../com">Conjuntos com bojo</a></li>
-                                                      <li><a href="../sem">Conjuntos sem bojo</a></li>
-                                                      <li><a href="../noite">Noite</a></li>
-                                                      </ul>
-                                                </li>
-                                                <li><a href="../contato.html">Contato</a></li>
-                                                <li><a href="../guia-medidas.html">Guia de medidas</a></li>
-                                                <li><a href="#">Sobre nós</a></li>
-                                          </ul>
-                                    </nav>
-                              </div>
-                        </div>
-                              
-                        </div>
-
-                  </div>
-            </header>
+            <%-include('../include/menu')%>
             <main id="item">
                   <div class="item">
                         <div class="divisao">
