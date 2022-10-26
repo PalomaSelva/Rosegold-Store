@@ -10,6 +10,7 @@
             <link rel="stylesheet" href="assets/css/reset.css">
             <link rel="stylesheet" href="assets/css/style.css"> 
             <link rel="stylesheet" href="assets/css/responsive.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
       </head>
       <body>
@@ -88,20 +89,17 @@
                                                             </div>
                                                             <div class="info-produto-carrinho">
                                                                   <p>Nome do produto</p>
-                                                                  <div class="RemoveItem">
-                                                                        <p class="remove"> Remover</p>                                                            
-                                                                  </div>
+                                                                  <div>Tamanho: <span class="size">P</span></div>
                                                             </div>
                                                       </td>
-
                                                       <td>
-                                                            <% for (let i = 0; i < 3; i++) {  %>
+                                                            
                                                             <div id="counter">
-                                                                  <button name="Subtrair" id="sub<%=i%>">-</button>
-                                                                  <span class="currentNumber<%=i%>"></span>
-                                                                  <button name="Adicionar" id="add<%=i%>" >+</button>
+                                                                  <button name="Subtrair" id="sub">-</button>
+                                                                  <span class="currentNumber">1</span>
+                                                                  <button name="Adicionar" id="add" >+</button>
                                                             </div>
-                                                             <% } %> 
+                                                            
 
                                                       </td>
 
@@ -111,6 +109,9 @@
                                                                         Precinho
                                                                   </p>
                                                             </div>
+                                                            <span class="material-symbols-outlined remove">
+                                                                  cancel
+                                                            </span>
                                                       </td>
                                                 </tr>
                                                 
@@ -127,7 +128,7 @@
                                                 <p>R$ 100</p>
                                           </div>
                                           <div class="final">
-                                                <button>Finalizar compra</button
+                                                <button>Finalizar compra</button>
                                           </div>
                                           
                                     </div>
@@ -144,6 +145,7 @@
             language-code="pt-br"
             ></df-messenger>
 
-            <script src="../assets/js/contador2.js"></script>
+            <script src="../assets/JS/contador2.js"></script>
+
 </body>
 </html>

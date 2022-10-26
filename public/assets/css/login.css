@@ -4,12 +4,9 @@
     align-items:center ;
     justify-content: center;
     height: 100vh;
-    
 }
 .login-container{
     width: 32vw; /* desktop */
-    
-    
 }
 .login-container .header h2{
     font-family: Staatliches;
@@ -28,7 +25,6 @@
 .login-container .header span{
     color: #7C7C8A;
     font-size: 1.9rem;
-
 }
 .form-login-wrapped{
     margin: 28px 0;
@@ -46,16 +42,13 @@
     font-size: 1.5rem;
     outline: none;
     border: none;
-
 }
 .form-login input:focus{
     border: 1px solid #9F7565;
 }
-
 .form-elements{
     margin-bottom: 24px;
 }
-
 .btn{
     width: 100%;
     padding: 16px 12px;
@@ -79,4 +72,7 @@
     text-align: center;
     color: #656579;
     font-size: 1.3rem;
+}
+.footer div:hover{
+    color: #7C7C8A;
 }

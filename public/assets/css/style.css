@@ -930,9 +930,10 @@ main .container h3{
       max-width: 700px;
       width: 100%;
       display: flex;
-      
-      border-radius: 10px;
+      border-radius: 10px 10px 0 0;
       align-items: center;
+      height: 100%;
+      border-top:3px solid #9f7565 ;
 }
 .shadow{
       -webkit-box-shadow: 0px 0px 5px 0px rgba(95,95,95,0.43); 
@@ -943,7 +944,7 @@ main .container h3{
       max-width: 100%;
       width: 100%;
       min-height: 100px;
-      margin: 10px auto;
+      margin: 8px auto;
 }
 .itens-carrinho .card-carrinho table{
       max-width: 100%;
@@ -957,6 +958,7 @@ main .container h3{
       font-size: 1.7rem;
       font-weight: 500;
       border-bottom: .4px solid #8d685971;
+      
 }
 
 .card-carrinho table th,td{
@@ -986,7 +988,7 @@ main .container h3{
       
 }
 .info-produto-carrinho{
-      padding: 10px;
+      padding: 10px 4px;
       
 }
 .card-carrinho .produto-carrinho .info-produto-carrinho p{
@@ -1008,7 +1010,7 @@ main .container h3{
       margin: 15px 20px;
       width: 28%;
       max-height: 230px;
-      min-height: 200px;
+      height: 100%;
       max-width: 700px;
       min-width: 270px;
       
@@ -1018,7 +1020,7 @@ main .container h3{
       flex-direction: column; 
       justify-content: space-between;
       height: 100%;
-      min-height: 200px;
+      min-height: 176px;
       
 }
 .title-pedido{
@@ -1042,6 +1044,46 @@ main .container h3{
       color: white;
       border: 1px solid #9f7565a1;
       margin:5px 0 ;
+      transition: all .4s;
+}
+.card-resumo-pedido button:hover{
+      background:#815c4d;
+}
+
+.card-carrinho table td:last-of-type{
+      position: relative;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  position: absolute;
+  top:10px;
+  left: 100px;
+  color: #9F7565;
+  box-shadow: 10px -2px 126px -33px rgba(0,0,0,0.75);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.material-symbols-outlined:hover {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+
+.card-carrinho table tr:not(.table-header){
+      border-top: .3px solid #684b4071;
+}
+.info-produto-carrinho div{
+      font-size: 1.15rem;
+      color: #664336;
+      font-weight: 400;
 }
 .msgemail{
       color: red;
@@ -1049,6 +1091,7 @@ main .container h3{
       margin: 8px 0 0 6px;
       
 }
+
 
 /* .card-resumo-wrapped .final a{
       display: block;
