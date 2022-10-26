@@ -27,6 +27,9 @@
             font-weight: 600;
             color:#000000;
       }
+      .carrinho .container{
+            width: 90%;
+      }
 
 }
 
@@ -294,9 +297,18 @@
 
 }
 
+.carrinho .title{
+      align-self: center;
+      text-align: center;
+}
+
 .info-produto-carrinho{
       padding: 0;
 }
-
-
+.material-symbols-outlined {
+      left: 70%;
+}
+.login-container{
+      width: 90vw;
+}
 }

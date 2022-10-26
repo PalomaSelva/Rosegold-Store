@@ -6,7 +6,7 @@
     height: 100vh;
 }
 .login-container{
-    width: 32vw; /* desktop */
+    width: 28vw; /* desktop */
 }
 .login-container .header h2{
     font-family: Staatliches;

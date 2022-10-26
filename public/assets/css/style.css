@@ -903,7 +903,6 @@ main .container h3{
 /* Carrinho de compras*/
 
 #carrinho .container{
-      width: 90%;
       max-width: 1100px;
       margin: 10px auto;
       flex-direction: column;
@@ -1062,7 +1061,7 @@ main .container h3{
   'opsz' 48;
   position: absolute;
   top:10px;
-  left: 100px;
+  left: 78%;
   color: #9F7565;
   box-shadow: 10px -2px 126px -33px rgba(0,0,0,0.75);
   cursor: pointer;
