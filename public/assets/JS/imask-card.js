@@ -1,4 +1,5 @@
-// PAGAMENTO
 
-const ccNumber = window.document.querySelector('.cc-number')
-console.log(ccNumber)
+const cvc = window.document.querySelector('#cvc')
+const cvcPattern  = {mask:'000'}
+const cvcMasked = IMask(cvc, cvcPattern);
+
