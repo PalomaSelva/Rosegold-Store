@@ -18,7 +18,7 @@
       border-radius: 0px;
 }
       nav ul li ul li:hover a{
-      color: #997D85;
+            color: #997D85;
       border-bottom: 1px solid #997D85;
       border-radius: 0px;
 
@@ -31,10 +31,31 @@
             width: 90%;
       }
 
+     
 }
+@media (min-width:891px){
+      #payment .credit-card{
+            width: 70%;    
+            
+      }
+      .card-form-wrapped{
+            width: 42%;
+            
+      }
+      .credit-card-image{
+            width: 55%;
+      }
+}
+@media (max-width:800px){
+      .card-form-wrapped {
+            width: 100%;
+        }
 
+}
 @media (max-width:890px){
-
+        .credit-card-image{
+            width: 100%;
+        }
       #contact{
             height: 100%;
       }
@@ -78,11 +99,12 @@
       #item .details{
             width: 100%;
       }
-
+      
+      
       
 
 }
-@media (max-width:900px){
+@media (max-width:889px){
       .carrinho .itens-compras{
             width: 100%;
             display: flex;
@@ -98,7 +120,11 @@
             min-height: 200px;
       
       }
-}
+      #payment{
+            flex-direction: column;
+            
+      }
+
 @media (max-width:750px){
 
       header .header-two .container{
@@ -311,4 +337,30 @@
 .login-container{
       width: 90vw;
 }
+
+.credit-card .flex{
+      flex-direction: column;
 }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}/* codigo ibge */

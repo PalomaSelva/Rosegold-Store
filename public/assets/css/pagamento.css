@@ -1,18 +1,21 @@
-.frame{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 73vh;
-}
-#payment,.credit-card ,.credit-card form{
+
+#payment,.credit-card ,.credit-card form,.cc-info {
     display: flex;
 }
 
 #payment{
+    margin: 0 auto;
     width: 86.5vw;
+    display: flex;
+    justify-content: center;
+}
+.frame h1{
+    color:#9f7565;
+    text-align: center;
+    margin: 20px;
 }
 .credit-card{
-    width: 70%;
+    width: 100%;
     padding: 28px 48px 20px 48px;
     border-radius: 14px;
     background-color: #E0CFC9;
@@ -22,7 +25,7 @@
     flex-direction: column;
 }
 .card-logo{
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-bottom: 32px;
     display: flex;
     align-items: center;
@@ -30,9 +33,7 @@
 .card-logo svg{
     margin: 0 8px;
 }
-.card-form-wrapped {
-    width: 40%;
-}
+
 .card-form-wrapped form{
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -66,6 +67,8 @@ button{
     border-radius: 6px;
     background-color: #9F7565;
     font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
     border: none;
     transition: all .5s;
     color: #ffff;
@@ -77,24 +80,60 @@ button:hover{
     width: 25%;
     margin: 0 0 0 20px;
     background-color: rgba(221, 210, 206, 0.36);
+    min-height: 100px;
 }
 .credit-card-image{
-    width: 55%;
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     
 }
-.cc-bg{
-    width: 100%;
-    height: 230px;
-    background:no-repeat ;
-    background-image: url('../imgs/card.svg');
-     
-}
 .flex{
     display: flex;
     justify-content: space-between;
     
+}
+.cc-bg{
+    width: 100%;
+    max-width: 365px;
+    height: 230px;
+    background:no-repeat;
+    background-size: cover;
+    background-image: url('../imgs/card.svg');
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.cc-info{
+    height: 63%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'Poppins';
+}
+.cc-icons{
+    display: flex;
+    justify-content: space-between;
+}
+.cc-number{
+    letter-spacing: .25rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+.cc-input{
+    font-size: 1.15rem;
+}
+.cc-value{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 4px;
+}
+.last-inputs-info{
+    display: flex;
+    justify-content: space-between;
 }
